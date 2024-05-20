@@ -1,5 +1,5 @@
 ---
-name: OpenWISP Network Topology CI Build
+name: Immunity Network Topology CI Build
 
 on:
   push:
@@ -64,9 +64,9 @@ jobs:
       - name: Install test dependencies
         run: |
           pip install -U -r requirements-test.txt
-          pip install --force-reinstall https://github.com/openwisp/openwisp-controller/tarball/master
+          pip install --force-reinstall https://github.com/edge-servers/immunity-controller/tarball/master
 
-      - name: Install openwisp-network-topology
+      - name: Install immunity-network-topology
         run: |
           pip install -U -e .
           pip install ${{ matrix.django-version }}

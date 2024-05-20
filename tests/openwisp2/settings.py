@@ -11,8 +11,8 @@ ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'openwisp_utils.db.backends.spatialite',
-        'NAME': os.path.join(BASE_DIR, 'openwisp_network_topology.db'),
+        'ENGINE': 'immunity_utils.db.backends.spatialite',
+        'NAME': os.path.join(BASE_DIR, 'immunity_network_topology.db'),
     }
 }
 
@@ -25,26 +25,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'openwisp_utils.admin_theme',
+    'immunity_utils.admin_theme',
     # all-auth
     'django.contrib.sites',
-    'openwisp_users.accounts',
+    'immunity_users.accounts',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     # controller  (needed to test integration)
-    'openwisp_controller.pki',
-    'openwisp_controller.config',
-    'openwisp_controller.connection',
-    'openwisp_notifications',
-    'openwisp_ipam',
+    'immunity_controller.pki',
+    'immunity_controller.config',
+    'immunity_controller.connection',
+    'immunity_notifications',
+    'immunity_ipam',
     'reversion',
     'sortedm2m',
     'flat_json_widget',
     # network topology
-    'openwisp_network_topology',
-    'openwisp_network_topology.integrations.device',
-    'openwisp_users',
+    'immunity_network_topology',
+    'immunity_network_topology.integrations.device',
+    'immunity_users',
     # admin
     'import_export',
     'admin_auto_filters',
@@ -64,13 +64,13 @@ INSTALLED_APPS = [
 
 EXTENDED_APPS = ['django_x509', 'django_loci']
 
-AUTH_USER_MODEL = 'openwisp_users.User'
+AUTH_USER_MODEL = 'immunity_users.User'
 SITE_ID = 1
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'openwisp_utils.staticfiles.DependencyFinder',
+    'immunity_utils.staticfiles.DependencyFinder',
 ]
 
 MIDDLEWARE = [
@@ -86,9 +86,9 @@ MIDDLEWARE = [
 
 # INTERNAL_IPS = ['127.0.0.1']
 
-ROOT_URLCONF = 'openwisp2.urls'
+ROOT_URLCONF = 'immunity2.urls'
 
-ASGI_APPLICATION = 'openwisp2.asgi.application'
+ASGI_APPLICATION = 'immunity2.asgi.application'
 
 CHANNEL_LAYERS = {'default': {'BACKEND': 'channels.layers.InMemoryChannelLayer'}}
 FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
@@ -108,14 +108,14 @@ TEMPLATES = [
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
-                'openwisp_utils.loaders.DependencyLoader',
+                'immunity_utils.loaders.DependencyLoader',
             ],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'openwisp_utils.admin_theme.context_processor.menu_groups',
+                'immunity_utils.admin_theme.context_processor.menu_groups',
             ],
         },
     }
@@ -159,7 +159,7 @@ LOGGING = {
     'loggers': {'py.warnings': {'handlers': ['console']}},
 }
 
-TEST_RUNNER = 'openwisp_network_topology.tests.utils.LoggingDisabledTestRunner'
+TEST_RUNNER = 'immunity_network_topology.tests.utils.LoggingDisabledTestRunner'
 
 # during development only
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -195,20 +195,20 @@ if not TESTING and any(['shell' in sys.argv, 'shell_plus' in sys.argv]):
 if not TESTING or (TESTING and os.environ.get('WIFI_MESH', False)):
     OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION = True
     INSTALLED_APPS.insert(
-        INSTALLED_APPS.index('openwisp_controller.connection'),
-        'openwisp_controller.geo',
+        INSTALLED_APPS.index('immunity_controller.connection'),
+        'immunity_controller.geo',
     )
-    openwisp_ipam_index = INSTALLED_APPS.index('openwisp_ipam')
-    INSTALLED_APPS.insert(openwisp_ipam_index, 'leaflet')
-    INSTALLED_APPS.insert(openwisp_ipam_index, 'nested_admin')
-    INSTALLED_APPS.insert(openwisp_ipam_index, 'openwisp_monitoring.check')
-    INSTALLED_APPS.insert(openwisp_ipam_index, 'openwisp_monitoring.device')
-    INSTALLED_APPS.insert(openwisp_ipam_index, 'openwisp_monitoring.monitoring')
+    immunity_ipam_index = INSTALLED_APPS.index('immunity_ipam')
+    INSTALLED_APPS.insert(immunity_ipam_index, 'leaflet')
+    INSTALLED_APPS.insert(immunity_ipam_index, 'nested_admin')
+    INSTALLED_APPS.insert(immunity_ipam_index, 'immunity_monitoring.check')
+    INSTALLED_APPS.insert(immunity_ipam_index, 'immunity_monitoring.device')
+    INSTALLED_APPS.insert(immunity_ipam_index, 'immunity_monitoring.monitoring')
     TIMESERIES_DATABASE = {
-        'BACKEND': 'openwisp_monitoring.db.backends.influxdb',
-        'USER': 'openwisp',
-        'PASSWORD': 'openwisp',
-        'NAME': 'openwisp2',
+        'BACKEND': 'immunity_monitoring.db.backends.influxdb',
+        'USER': 'immunity',
+        'PASSWORD': 'immunity',
+        'NAME': 'immunity2',
         'HOST': os.getenv('INFLUXDB_HOST', 'localhost'),
         'PORT': '8086',
     }
@@ -224,12 +224,12 @@ if not TESTING or (TESTING and os.environ.get('WIFI_MESH', False)):
     }
 
 if os.environ.get('SAMPLE_APP', False):
-    INSTALLED_APPS.remove('openwisp_network_topology')
-    INSTALLED_APPS.remove('openwisp_network_topology.integrations.device')
-    EXTENDED_APPS = ['openwisp_network_topology']
+    INSTALLED_APPS.remove('immunity_network_topology')
+    INSTALLED_APPS.remove('immunity_network_topology.integrations.device')
+    EXTENDED_APPS = ['immunity_network_topology']
     INSTALLED_APPS += [
-        'openwisp2.sample_network_topology',
-        'openwisp2.sample_integration_device',
+        'immunity2.sample_network_topology',
+        'immunity2.sample_integration_device',
     ]
     TOPOLOGY_LINK_MODEL = 'sample_network_topology.Link'
     TOPOLOGY_NODE_MODEL = 'sample_network_topology.Node'

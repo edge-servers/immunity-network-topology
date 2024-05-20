@@ -1,6 +1,6 @@
 from django.db import models
 
-from openwisp_network_topology.integrations.device.base.models import (
+from immunity_network_topology.integrations.device.base.models import (
     AbstractDeviceNode,
     AbstractWifiMesh,
 )

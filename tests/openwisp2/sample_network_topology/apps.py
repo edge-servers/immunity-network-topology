@@ -1,9 +1,9 @@
-from openwisp_network_topology.apps import OpenwispNetworkTopologyConfig
+from immunity_network_topology.apps import ImmunityNetworkTopologyConfig
 
 
-class SampleNetworkTopologyConfig(OpenwispNetworkTopologyConfig):
-    name = 'openwisp2.sample_network_topology'
+class SampleNetworkTopologyConfig(ImmunityNetworkTopologyConfig):
+    name = 'immunity2.sample_network_topology'
     label = 'sample_network_topology'
 
 
-del OpenwispNetworkTopologyConfig
+del ImmunityNetworkTopologyConfig

@@ -4,7 +4,7 @@
 # DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': 'openwisp_network_topology.db',
+#        'NAME': 'immunity_network_topology.db',
 #        'USER': '',
 #        'PASSWORD': '',
 #        'HOST': '',

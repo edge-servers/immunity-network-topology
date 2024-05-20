@@ -8,9 +8,9 @@ services:
     ports:
       - "8086:8086"
     environment:
-      INFLUXDB_DB: openwisp2
-      INFLUXDB_USER: openwisp
-      INFLUXDB_USER_PASSWORD: openwisp
+      INFLUXDB_DB: immunity2
+      INFLUXDB_USER: immunity
+      INFLUXDB_USER_PASSWORD: immunity
 
   redis:
     image: redis:alpine

@@ -13,9 +13,9 @@ from django.conf import settings
 from django.db import migrations, models
 from swapper import dependency, get_model_name, split
 
-import openwisp_users.mixins
-import openwisp_utils.base
-import openwisp_utils.utils
+import immunity_users.mixins
+import immunity_utils.base
+import immunity_utils.utils
 
 
 class Migration(migrations.Migration):
@@ -97,9 +97,9 @@ class Migration(migrations.Migration):
                 ),
                 (
                     'key',
-                    openwisp_utils.base.KeyField(
+                    immunity_utils.base.KeyField(
                         blank=True,
-                        default=openwisp_utils.utils.get_random_key,
+                        default=immunity_utils.utils.get_random_key,
                         help_text='key needed to update topology from nodes ',
                         max_length=64,
                         validators=[
@@ -160,13 +160,13 @@ class Migration(migrations.Migration):
                         blank=True,
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to=get_model_name('openwisp_users', 'Organization'),
+                        to=get_model_name('immunity_users', 'Organization'),
                         verbose_name='organization',
                     ),
                 ),
             ],
             options={'verbose_name_plural': 'topologies', 'abstract': False},
-            bases=(openwisp_users.mixins.ValidateOrgMixin, models.Model),
+            bases=(immunity_users.mixins.ValidateOrgMixin, models.Model),
         ),
         migrations.CreateModel(
             name='Snapshot',
@@ -208,7 +208,7 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={'verbose_name_plural': 'snapshots', 'abstract': False},
-            bases=(openwisp_users.mixins.ValidateOrgMixin, models.Model),
+            bases=(immunity_users.mixins.ValidateOrgMixin, models.Model),
         ),
         migrations.CreateModel(
             name='Node',
@@ -256,7 +256,7 @@ class Migration(migrations.Migration):
                         blank=True,
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to=get_model_name('openwisp_users', 'Organization'),
+                        to=get_model_name('immunity_users', 'Organization'),
                         verbose_name='organization',
                     ),
                 ),
@@ -269,7 +269,7 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={'abstract': False},
-            bases=(openwisp_users.mixins.ValidateOrgMixin, models.Model),
+            bases=(immunity_users.mixins.ValidateOrgMixin, models.Model),
         ),
         migrations.CreateModel(
             name='Link',
@@ -327,7 +327,7 @@ class Migration(migrations.Migration):
                         blank=True,
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to=get_model_name('openwisp_users', 'Organization'),
+                        to=get_model_name('immunity_users', 'Organization'),
                         verbose_name='organization',
                     ),
                 ),
@@ -356,6 +356,6 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={'abstract': False},
-            bases=(openwisp_users.mixins.ValidateOrgMixin, models.Model),
+            bases=(immunity_users.mixins.ValidateOrgMixin, models.Model),
         ),
     ]

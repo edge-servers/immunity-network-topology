@@ -1,30 +1,30 @@
-from openwisp_network_topology.tests.test_admin import TestAdmin as BaseTestAdmin
-from openwisp_network_topology.tests.test_admin import (
+from immunity_network_topology.tests.test_admin import TestAdmin as BaseTestAdmin
+from immunity_network_topology.tests.test_admin import (
     TestMultitenantAdmin as BaseTestMultitenantAdmin,
 )
-from openwisp_network_topology.tests.test_api import TestApi as BaseTestApi
-from openwisp_network_topology.tests.test_link import TestLink as BaseTestLink
-from openwisp_network_topology.tests.test_node import TestNode as BaseTestNode
-from openwisp_network_topology.tests.test_snapshot import (
+from immunity_network_topology.tests.test_api import TestApi as BaseTestApi
+from immunity_network_topology.tests.test_link import TestLink as BaseTestLink
+from immunity_network_topology.tests.test_node import TestNode as BaseTestNode
+from immunity_network_topology.tests.test_snapshot import (
     TestSnapshot as BaseTestSnapshot,
 )
-from openwisp_network_topology.tests.test_topology import (
+from immunity_network_topology.tests.test_topology import (
     TestTopology as BaseTestTopology,
 )
-from openwisp_network_topology.tests.test_upgrader_script import (
+from immunity_network_topology.tests.test_upgrader_script import (
     TestUpgradeFromDjangoNetjsongraph as BaseTestUpgradeFromDjangoNetjsongraph,
 )
-from openwisp_network_topology.tests.test_users_integration import (
+from immunity_network_topology.tests.test_users_integration import (
     TestUsersIntegration as BaseTestUsersIntegration,
 )
-from openwisp_network_topology.tests.test_utils import TestUtils as BaseTestUtils
-from openwisp_network_topology.tests.test_visualizer import (
+from immunity_network_topology.tests.test_utils import TestUtils as BaseTestUtils
+from immunity_network_topology.tests.test_visualizer import (
     TestVisualizer as BaseTestVisualizer,
 )
 
 
 class TestAdmin(BaseTestAdmin):
-    module = 'openwisp2.sample_network_topology'
+    module = 'immunity2.sample_network_topology'
     app_label = 'sample_network_topology'
 
 

@@ -1,1 +1,1 @@
-from openwisp_network_topology import admin  # noqa
+from immunity_network_topology import admin  # noqa

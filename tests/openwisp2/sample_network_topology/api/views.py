@@ -1,19 +1,19 @@
-from openwisp_network_topology.api.views import LinkDetailView as BaseLinkDetailView
-from openwisp_network_topology.api.views import (
+from immunity_network_topology.api.views import LinkDetailView as BaseLinkDetailView
+from immunity_network_topology.api.views import (
     LinkListCreateView as BaseLinkListCreateView,
 )
-from openwisp_network_topology.api.views import (
+from immunity_network_topology.api.views import (
     NetworkCollectionView as BaseNetworkCollectionView,
 )
-from openwisp_network_topology.api.views import (
+from immunity_network_topology.api.views import (
     NetworkGraphHistoryView as BaseNetworkGraphHistoryView,
 )
-from openwisp_network_topology.api.views import NetworkGraphView as BaseNetworkGraphView
-from openwisp_network_topology.api.views import NodeDetailView as BaseNodeDetailView
-from openwisp_network_topology.api.views import (
+from immunity_network_topology.api.views import NetworkGraphView as BaseNetworkGraphView
+from immunity_network_topology.api.views import NodeDetailView as BaseNodeDetailView
+from immunity_network_topology.api.views import (
     NodeListCreateView as BaseNodeListCreateView,
 )
-from openwisp_network_topology.api.views import (
+from immunity_network_topology.api.views import (
     ReceiveTopologyView as BaseReceiveTopologyView,
 )
 

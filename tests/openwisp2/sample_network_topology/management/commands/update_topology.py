@@ -1,4 +1,4 @@
-from openwisp_network_topology.management.commands import BaseUpdateCommand
+from immunity_network_topology.management.commands import BaseUpdateCommand
 
 
 class Command(BaseUpdateCommand):

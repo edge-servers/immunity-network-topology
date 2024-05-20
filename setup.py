@@ -4,7 +4,7 @@ import sys
 
 from setuptools import find_packages, setup
 
-from openwisp_network_topology import get_version
+from immunity_network_topology import get_version
 
 
 def get_install_requires():
@@ -40,17 +40,17 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='openwisp-network-topology',
+    name='immunity-network-topology',
     version=get_version(),
     license='BSD-3-Clause',
-    author='OpenWISP',
-    author_email='support@openwisp.io',
-    description='OpenWISP Network Topology',
+    author='Immunity',
+    author_email='support@immunity.io',
+    description='Immunity Network Topology',
     long_description=open('README.rst').read(),
-    url='http://openwisp.org',
-    download_url='https://github.com/openwisp/openwisp-network-topology/releases',
+    url='http://immunity.org',
+    download_url='https://github.com/edge-servers/immunity-network-topology/releases',
     platforms=['Platform Independent'],
-    keywords=['django', 'netjson', 'openwrt', 'networking', 'openwisp'],
+    keywords=['django', 'netjson', 'openwrt', 'networking', 'immunity'],
     packages=find_packages(exclude=['tests*', 'docs*']),
     include_package_data=True,
     zip_safe=False,

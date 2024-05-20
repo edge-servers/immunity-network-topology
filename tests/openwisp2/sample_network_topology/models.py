@@ -1,9 +1,9 @@
 from django.db import models
 
-from openwisp_network_topology.base.link import AbstractLink
-from openwisp_network_topology.base.node import AbstractNode
-from openwisp_network_topology.base.snapshot import AbstractSnapshot
-from openwisp_network_topology.base.topology import AbstractTopology
+from immunity_network_topology.base.link import AbstractLink
+from immunity_network_topology.base.node import AbstractNode
+from immunity_network_topology.base.snapshot import AbstractSnapshot
+from immunity_network_topology.base.topology import AbstractTopology
 
 
 class DetailsModel(models.Model):

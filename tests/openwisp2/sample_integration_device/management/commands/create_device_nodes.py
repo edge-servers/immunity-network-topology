@@ -1,4 +1,4 @@
-from openwisp_network_topology.integrations.device.management.commands import (
+from immunity_network_topology.integrations.device.management.commands import (
     BaseCreateDeviceNodeCommand,
 )
 

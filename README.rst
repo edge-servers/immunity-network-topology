@@ -1,41 +1,41 @@
 =========================
-openwisp-network-topology
+immunity-network-topology
 =========================
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/workflows/OpenWISP%20Network%20Topology%20CI%20Build/badge.svg?branch=master
-   :target: https://github.com/openwisp/openwisp-network-topology/actions?query=OpenWISP+Network+Topology+CI+Build
+.. image:: https://github.com/edge-servers/immunity-network-topology/workflows/Immunity%20Network%20Topology%20CI%20Build/badge.svg?branch=master
+   :target: https://github.com/edge-servers/immunity-network-topology/actions?query=Immunity+Network+Topology+CI+Build
    :alt: CI build status
 
-.. image:: https://coveralls.io/repos/github/openwisp/openwisp-network-topology/badge.svg
-   :target: https://coveralls.io/github/openwisp/openwisp-network-topology
+.. image:: https://coveralls.io/repos/github/immunity/immunity-network-topology/badge.svg
+   :target: https://coveralls.io/github/immunity/immunity-network-topology
    :alt: Test Coverage
 
-.. image:: https://img.shields.io/librariesio/github/openwisp/openwisp-network-topology
-   :target: https://libraries.io/github/openwisp/openwisp-network-topology#repository_dependencies
+.. image:: https://img.shields.io/librariesio/github/immunity/immunity-network-topology
+   :target: https://libraries.io/github/immunity/immunity-network-topology#repository_dependencies
    :alt: Dependency monitoring
 
 .. image:: https://img.shields.io/gitter/room/nwjs/nw.js.svg
-   :target: https://gitter.im/openwisp/general
+   :target: https://gitter.im/immunity/general
    :alt: chat
 
-.. image:: https://badge.fury.io/py/openwisp-network-topology.svg
-   :target: http://badge.fury.io/py/openwisp-network-topology
+.. image:: https://badge.fury.io/py/immunity-network-topology.svg
+   :target: http://badge.fury.io/py/immunity-network-topology
    :alt: Pypi Version
 
-.. image:: https://pepy.tech/badge/openwisp-network-topology
-   :target: https://pepy.tech/project/openwisp-network-topology
+.. image:: https://pepy.tech/badge/immunity-network-topology
+   :target: https://pepy.tech/project/immunity-network-topology
    :alt: downloads
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://pypi.org/project/black/
    :alt: code style: black
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/raw/docs/docs/demo_network_topology.gif
+.. image:: https://github.com/edge-servers/immunity-network-topology/raw/docs/docs/demo_network_topology.gif
    :alt: Features Highlights
 
-**Need a quick overview?** `Try the OpenWISP Demo <https://openwisp.org/demo.html>`_.
+**Need a quick overview?** `Try the Immunity Demo <https://immunity.org/demo.html>`_.
 
-OpenWISP Network Topology is a network topology collector and visualizer
+Immunity Network Topology is a network topology collector and visualizer
 web application and API, it allows to collect network topology data from different
 networking software (dynamic mesh routing protocols, OpenVPN), store it,
 visualize it, edit its details, it also provides hooks (a.k.a
@@ -43,43 +43,43 @@ visualize it, edit its details, it also provides hooks (a.k.a
 to execute code when the status of a link changes.
 
 When used in conjunction with
-`OpenWISP Controller <https://github.com/openwisp/openwisp-controller>`_
+`Immunity Controller <https://github.com/edge-servers/immunity-controller>`_
 and
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`_,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`_,
 it
-`makes the monitoring system faster in detecting change to the network <#integration-with-openwisp-controller-and-openwisp-monitoring>`_.
+`makes the monitoring system faster in detecting change to the network <#integration-with-immunity-controller-and-immunity-monitoring>`_.
 
-OpenWISP is not only an application designed for end users, but can also be
+Immunity is not only an application designed for end users, but can also be
 used as a framework on which custom network automation solutions can be built
 on top of its building blocks.
 
-Other popular building blocks that are part of the OpenWISP ecosystem are:
+Other popular building blocks that are part of the Immunity ecosystem are:
 
-- `openwisp-controller <https://github.com/openwisp/openwisp-controller>`_:
+- `immunity-controller <https://github.com/edge-servers/immunity-controller>`_:
   network and WiFi controller: provisioning, configuration management,
   x509 PKI management and more; works on OpenWRT, but designed to work also on other systems.
-- `openwisp-monitoring <https://github.com/openwisp/openwisp-monitoring>`_:
+- `immunity-monitoring <https://github.com/edge-servers/immunity-monitoring>`_:
   provides device status monitoring, collection of metrics, charts, alerts,
   possibility to define custom checks
-- `openwisp-firmware-upgrader <https://github.com/openwisp/openwisp-firmware-upgrader>`_:
+- `immunity-firmware-upgrader <https://github.com/edge-servers/immunity-firmware-upgrader>`_:
   automated firmware upgrades (single device or mass network upgrades)
-- `openwisp-radius <https://github.com/openwisp/openwisp-radius>`_:
+- `immunity-radius <https://github.com/edge-servers/immunity-radius>`_:
   based on FreeRADIUS, allows to implement network access authentication systems like
   802.1x WPA2 Enterprise, captive portal authentication, Hotspot 2.0 (802.11u)
-- `openwisp-ipam <https://github.com/openwisp/openwisp-ipam>`_:
+- `immunity-ipam <https://github.com/edge-servers/immunity-ipam>`_:
   it allows to manage the IP address space of networks
 
-**For a more complete overview of the OpenWISP modules and architecture**,
+**For a more complete overview of the Immunity modules and architecture**,
 see the
-`OpenWISP Architecture Overview
-<https://openwisp.io/docs/general/architecture.html>`_.
+`Immunity Architecture Overview
+<https://immunity.io/docs/general/architecture.html>`_.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp2-docs/master/assets/design/openwisp-logo-black.svg
-  :target: http://openwisp.org
-  :alt: OpenWISP
+.. image:: https://raw.githubusercontent.com/immunity/immunity2-docs/master/assets/design/immunity-logo-black.svg
+  :target: http://immunity.org
+  :alt: Immunity
 
-**Want to help OpenWISP?** `Find out how to help us grow here
-<http://openwisp.io/docs/general/help-us.html>`_.
+**Want to help Immunity?** `Find out how to help us grow here
+<http://immunity.io/docs/general/help-us.html>`_.
 
 ------------
 
@@ -102,9 +102,9 @@ Available features
     - Wireguard
     - ZeroTier
     - additional formats can be added by
-      `writing custom netdiff parsers <https://github.com/openwisp/netdiff#parsers>`_
+      `writing custom netdiff parsers <https://github.com/edge-servers/netdiff#parsers>`_
 * **network topology visualizer** based on
-  `netjsongraph.js <https://github.com/openwisp/netjsongraph.js>`_
+  `netjsongraph.js <https://github.com/edge-servers/netjsongraph.js>`_
 * `REST API <#rest-api>`_ that exposes data in
   `NetJSON <http://netjson.org>`__ *NetworkGraph* format
 * **admin interface** that allows to easily manage, audit, visualize and
@@ -112,8 +112,8 @@ Available features
 * `RECEIVE network topology data <#receive-strategy>`_ from multiple nodes
 * **topology history**: allows saving daily snapshots of each topology that
   can be viewed in the frontend
-* **faster monitoring**: `integrates with OpenWISP Controller and OpenWISP Monitoring
-  <#integration-with-openwisp-controller-and-openwisp-monitoring>`_
+* **faster monitoring**: `integrates with Immunity Controller and Immunity Monitoring
+  <#integration-with-immunity-controller-and-immunity-monitoring>`_
   for faster detection of critical events in the network
 
 Installation instructions
@@ -122,11 +122,11 @@ Installation instructions
 Deploy it in production
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-An automated installer is provided by the `OpenWISP <http://openwisp.org>`_ project:
-`ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_.
+An automated installer is provided by the `Immunity <http://immunity.org>`_ project:
+`ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_.
 
 Ensure to follow the instructions explained in the following section: `Enabling the network topology
-module <https://github.com/openwisp/ansible-openwisp2#enabling-the-network-topology-module>`_.
+module <https://github.com/edge-servers/ansible-immunity2#enabling-the-network-topology-module>`_.
 
 Install stable version from pypi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +135,7 @@ Install from pypi:
 
 .. code-block:: shell
 
-    pip install openwisp-network-topology
+    pip install immunity-network-topology
 
 Install development version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,20 +144,20 @@ Install tarball:
 
 .. code-block:: shell
 
-    pip install https://github.com/openwisp/openwisp-network-topology/tarball/master
+    pip install https://github.com/edge-servers/immunity-network-topology/tarball/master
 
 Alternatively you can install via pip using git:
 
 .. code-block:: shell
 
-    pip install -e git+git://github.com/openwisp/openwisp-network-topology#egg=openwisp-network-topology
+    pip install -e git+git://github.com/immunity/immunity-network-topology#egg=immunity-network-topology
 
 If you want to contribute, install your cloned fork:
 
 .. code-block:: shell
 
-    git clone git@github.com:<your_fork>/openwisp-network-topology.git
-    cd openwisp-network-topology
+    git clone git@github.com:<your_fork>/immunity-network-topology.git
+    cd immunity-network-topology
     python setup.py develop
 
 Installing for development
@@ -169,21 +169,21 @@ Install sqlite:
 
     sudo apt install -y sqlite3 libsqlite3-dev
     # Install system dependencies for spatialite which is required
-    # to run tests for openwisp-network-topology integrations with
-    # openwisp-controller and openwisp-monitoring.
+    # to run tests for immunity-network-topology integrations with
+    # immunity-controller and immunity-monitoring.
     sudo apt install libspatialite-dev libsqlite3-mod-spatialite
 
 Install your forked repo:
 
 .. code-block:: shell
 
-    git clone git://github.com/<your_fork>/openwisp-network-topology
-    cd openwisp-network-topology/
+    git clone git://github.com/<your_fork>/immunity-network-topology
+    cd immunity-network-topology/
     python setup.py develop
 
 Start InfluxDB and Redis using Docker
 (required by the test project to run tests for
-`WiFi Mesh Integration <#openwisp_network_topology_wifi_mesh_integration>`_):
+`WiFi Mesh Integration <#immunity_network_topology_wifi_mesh_integration>`_):
 
 .. code-block:: shell
 
@@ -227,17 +227,17 @@ Run qa tests:
 Setup (integrate in an existing django project)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ``openwisp_network_topology`` and its dependencies to ``INSTALLED_APPS``:
+Add ``immunity_network_topology`` and its dependencies to ``INSTALLED_APPS``:
 
 .. code-block:: python
 
     INSTALLED_APPS = [
         # other apps
-        'openwisp_network_topology',
-        'openwisp_users.accounts',
+        'immunity_network_topology',
+        'immunity_users.accounts',
         'allauth',
         'allauth.account',
-        'openwisp_users',
+        'immunity_users',
         'rest_framework',
     ]
 
@@ -249,7 +249,7 @@ Add the URLs to your main ``urls.py``:
 
     urlpatterns = [
         # ... other urls in your project ...
-        path('', include('openwisp_network_topology.urls')),
+        path('', include('immunity_network_topology.urls')),
         path('admin/', admin.site.urls),
     ]
 
@@ -271,7 +271,7 @@ to make the data collection and visualization work, read on to find out how.
 Creating a topology
 ^^^^^^^^^^^^^^^^^^^
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/raw/docs/docs/quickstart-topology.gif
+.. image:: https://github.com/edge-servers/immunity-network-topology/raw/docs/docs/quickstart-topology.gif
 
 1. Create a topology object by going to *Network Topology* > *Topologies*
    > *Add topology*.
@@ -290,9 +290,9 @@ Creating a topology
 Sending data for topology with RECEIVE strategy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/raw/docs/docs/quickstart-receive.gif
+.. image:: https://github.com/edge-servers/immunity-network-topology/raw/docs/docs/quickstart-receive.gif
 
-1. Copy the *URL* generated by OpenWISP for sending the topology data.
+1. Copy the *URL* generated by Immunity for sending the topology data.
 
    E.g., in our case the URL is ``http://127.0.0.1:8000/api/v1/network-topology/topology/d17e539a-1793-4be2-80a4-c305eca64fd8/receive/?key=cMGsvio8q0L0BGLd5twiFHQOqIEKI423``.
 
@@ -313,7 +313,7 @@ Sending data for topology with RECEIVE strategy
     KEY="<TOPOLOGY-KEY-HERE>"
     OPENWISP_URL="https://<OPENWISP_DOMAIN_HERE>"
     $COMMAND |
-        # Upload the topology data to OpenWISP
+        # Upload the topology data to Immunity
         curl -X POST \
             --data-binary @- \
             --header "Content-Type: text/plain" \
@@ -349,8 +349,8 @@ Follow the procedure described below to setup ZeroTier topology with RECEIVE str
 **Note:** In this example, the **Shared systemwide (no organization)**
 option is used for the ZeroTier topology organization. You are free to
 opt for any organization, as long as both the topology and the device share
-the same organization, assuming the `OpenWISP controller integration
-<#integration-with-openwisp-controller-and-openwisp-monitoring>`_ feature is enabled.
+the same organization, assuming the `Immunity controller integration
+<#integration-with-immunity-controller-and-immunity-monitoring>`_ feature is enabled.
 
 1. Create topology for ZeroTier
 ###############################
@@ -362,7 +362,7 @@ the same organization, assuming the `OpenWISP controller integration
 
 3. Select the strategy as ``RECEIVE`` from the dropdown.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-network-topology/docs/docs/zerotier-tutorial/topology-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-network-topology/docs/docs/zerotier-tutorial/topology-1.png
    :alt: ZeroTier topology configuration example 1
 
 4. Let use default **Expiration time** ``0`` and make sure **Published** option is checked.
@@ -370,7 +370,7 @@ the same organization, assuming the `OpenWISP controller integration
 5. After clicking on the **Save and continue editing** button, a topology receive URL is generated.
    Make sure you copy that URL for later use in the topology script.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-network-topology/docs/docs/zerotier-tutorial/topology-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-network-topology/docs/docs/zerotier-tutorial/topology-2.png
    :alt: ZeroTier topology configuration example 2
 
 2. Create a script for sending ZeroTier topology data
@@ -389,7 +389,7 @@ the same organization, assuming the `OpenWISP controller integration
  KEY="<TOPOLOGY-KEY-HERE>"
  OPENWISP_URL="https://<OPENWISP_DOMAIN_HERE>"
  $COMMAND |
-     # Upload the topology data to OpenWISP
+     # Upload the topology data to Immunity
      curl -X POST \
          --data-binary @- \
          --header "Content-Type: text/plain" \
@@ -424,7 +424,7 @@ for kernel interaction, without which the command will not function correctly.
    or, alternatively, a non-admin visualizer page is also available at
    the URL ``/topology/topology/<TOPOLOGY-UUID>/``.
 
-   .. image:: https://raw.githubusercontent.com/openwisp/openwisp-network-topology/docs/docs/zerotier-tutorial/topology-graph.png
+   .. image:: https://raw.githubusercontent.com/immunity/immunity-network-topology/docs/docs/zerotier-tutorial/topology-graph.png
     :alt: ZeroTier topology graph example 1
 
 Management Commands
@@ -460,9 +460,9 @@ topology labels, eg::
 ``upgrade_from_django_netjsongraph``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are upgrading from django-netjsongraph to openwisp-network-topology, there
+If you are upgrading from django-netjsongraph to immunity-network-topology, there
 is an easy migration script that will import your topologies, users & groups to
-openwisp-network-topology instance::
+immunity-network-topology instance::
 
     ./manage.py upgrade_from_django_netjsongraph
 
@@ -478,13 +478,13 @@ by default the data is added to the first found organization, eg::
 
     ./manage.py upgrade_from_django_netjsongraph --organization 900856da-c89a-412d-8fee-45a9c763ca0b
 
-**Note**: you can follow the `tutorial to migrate database from django-netjsongraph <https://github.com/openwisp/django-netjsongraph/blob/master/README.rst>`_.
+**Note**: you can follow the `tutorial to migrate database from django-netjsongraph <https://github.com/edge-servers/django-netjsongraph/blob/master/README.rst>`_.
 
 ``create_device_nodes``
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 This management command can be used to create the initial ``DeviceNode`` relationships when the
-`integration with OpenWISP Controller <#integration-with-openwisp-controller-and-openwisp-monitoring>`_
+`integration with Immunity Controller <#integration-with-immunity-controller-and-immunity-monitoring>`_
 is enabled in a pre-existing system which already has some devices and topology objects in its database.
 
 .. code-block:: shell
@@ -497,7 +497,7 @@ Logging
 The ``update_topology`` management command will automatically try to log errors.
 
 For a good default ``LOGGING`` configuration refer to the `test settings
-<https://github.com/openwisp/openwisp-network-topology/blob/master/tests/settings.py#L89>`_.
+<https://github.com/edge-servers/immunity-network-topology/blob/master/tests/settings.py#L89>`_.
 
 Strategies
 ----------
@@ -539,42 +539,42 @@ they haven't been detected for a while. This mechanism allows to visualize the
 topology even if the network has been split in several parts, the disadvantage
 is that it will take a bit more time to detect links that go offline.
 
-Integration with OpenWISP Controller and OpenWISP Monitoring
+Integration with Immunity Controller and Immunity Monitoring
 ------------------------------------------------------------
 
-If you use `OpenWISP Controller <https://github.com/openwisp/openwisp-controller>`_
-or `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`_
+If you use `Immunity Controller <https://github.com/edge-servers/immunity-controller>`_
+or `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`_
 and you use OpenVPN, Wireguard or ZeroTier for the management VPN, you can use
-the integration available in ``openwisp_network_topology.integrations.device``.
+the integration available in ``immunity_network_topology.integrations.device``.
 
 This additional and optional module provides the following features:
 
 - whenever the status of a link changes:
 
   - the management IP address of the related device is updated straightaway
-  - if OpenWISP Monitoring is enabled, the device checks are triggered (e.g.: ping)
+  - if Immunity Monitoring is enabled, the device checks are triggered (e.g.: ping)
 
-- if `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`_
+- if `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`_
   is installed and enabled, the system can automatically create topology
   for the WiFi Mesh (802.11s) interfaces using the monitoring data provided by the agent.
   You can enable this by setting `OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION
-  <#openwisp_network_topology_wifi_mesh_integration>`_ to ``True``.
+  <#immunity_network_topology_wifi_mesh_integration>`_ to ``True``.
 
 This integration makes the whole system a lot faster in detecting important events in the network.
 
 In order to use this module simply add
-``openwisp_network_topology.integrations.device`` to ``INSTALLED_APPS``:
+``immunity_network_topology.integrations.device`` to ``INSTALLED_APPS``:
 
 .. code-block:: python
 
     INSTALLED_APPS = [
-        # other apps (eg: openwisp-controller, openwisp-monitoring)
-        'openwisp_network_topology',
-        'openwisp_network_topology.integrations.device',
-        'openwisp_users.accounts',
+        # other apps (eg: immunity-controller, immunity-monitoring)
+        'immunity_network_topology',
+        'immunity_network_topology.integrations.device',
+        'immunity_users.accounts',
         'allauth',
         'allauth.account',
-        'openwisp_users',
+        'immunity_users',
         'rest_framework',
     ]
 
@@ -586,7 +586,7 @@ If you have enabled WiFI Mesh integration, you will also need to update the
     CELERY_BEAT_SCHEDULE = {
         'create_mesh_topology': {
             # This task generates the mesh topology from monitoring data
-            'task': 'openwisp_network_topology.integrations.device.tasks.create_mesh_topology',
+            'task': 'immunity_network_topology.integrations.device.tasks.create_mesh_topology',
             # Execute this task every 5 minutes
             'schedule': timedelta(minutes=5),
             'args': (
@@ -619,7 +619,7 @@ Settings
 | **default**: | ``[]``      |
 +--------------+-------------+
 
-Additional custom `netdiff parsers <https://github.com/openwisp/netdiff#parsers>`_.
+Additional custom `netdiff parsers <https://github.com/edge-servers/netdiff#parsers>`_.
 
 ``OPENWISP_NETWORK_TOPOLOGY_SIGNALS``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -706,10 +706,10 @@ another module, example, ``myapp.urls``.
 | **default**: |   ``None``    |
 +--------------+---------------+
 
-If you have a seperate instance of openwisp-network-topology on a
+If you have a seperate instance of immunity-network-topology on a
 different domain, you can use this option to change the base
 of the url, this will enable you to point all the API urls to
-your openwisp-network-topology API server's domain,
+your immunity-network-topology API server's domain,
 example value: ``https://mytopology.myapp.com``.
 
 ``OPENWISP_NETWORK_TOPOLOGY_API_AUTH_REQUIRED``
@@ -739,9 +739,9 @@ updated based on the WiFi mesh interfaces peer information supplied
 by the monitoring agent.
 
 **Note:** The network topology objects are created using the device monitoring data
-collected by OpenWISP Monitoring. Thus, it requires
-`integration with OpenWISP Controller and OpenWISP Monitoring
-<#integration-with-openwisp-controller-and-openwisp-monitoring>`_ to be enabled
+collected by Immunity Monitoring. Thus, it requires
+`integration with Immunity Controller and Immunity Monitoring
+<#integration-with-immunity-controller-and-immunity-monitoring>`_ to be enabled
 in the Django project.
 
 Rest API
@@ -750,14 +750,14 @@ Rest API
 Live documentation
 ^^^^^^^^^^^^^^^^^^
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/raw/docs/docs/api-doc.png
+.. image:: https://github.com/edge-servers/immunity-network-topology/raw/docs/docs/api-doc.png
 
 A general live API documentation (following the OpenAPI specification) at ``/api/v1/docs/``.
 
 Browsable web interface
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: https://github.com/openwisp/openwisp-network-topology/raw/docs/docs/api-ui.png
+.. image:: https://github.com/edge-servers/immunity-network-topology/raw/docs/docs/api-ui.png
 
 Additionally, opening any of the endpoints `listed below <#list-of-endpoints>`_
 directly in the browser will show the `browsable API interface of Django-REST-Framework
@@ -1001,7 +1001,7 @@ documentation <https://docs.djangoproject.com/en/dev/ref/templates/>`_.
 Example: overriding the ``<script>`` tag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here's a step by step guide on how to change the javascript options passed to `netjsongraph.js <https://github.com/openwisp/netjsongraph.js>`_, remember to replace ``<project_path>`` with the
+Here's a step by step guide on how to change the javascript options passed to `netjsongraph.js <https://github.com/edge-servers/netjsongraph.js>`_, remember to replace ``<project_path>`` with the
 absolute filesytem path of your project.
 
 **Step 1**: create a directory in ``<project_path>/templates/netjsongraph``
@@ -1050,21 +1050,21 @@ the new ``<project_path>/templates/netjsongraph/`` directory, eg:
         window.initTopologyHistory(jQuery);
     </script>
 
-Extending openwisp-network-topology
+Extending immunity-network-topology
 -----------------------------------
 
-One of the core values of the OpenWISP project is `Software Reusability <http://openwisp.io/docs/general/values.html#software-reusability-means-long-term-sustainability>`_,
-for this reason *openwisp-network-topology* provides a set of base classes
+One of the core values of the Immunity project is `Software Reusability <http://immunity.io/docs/general/values.html#software-reusability-means-long-term-sustainability>`_,
+for this reason *immunity-network-topology* provides a set of base classes
 which can be imported, extended and reused to create derivative apps.
 
-In order to implement your custom version of *openwisp-network-topology*,
+In order to implement your custom version of *immunity-network-topology*,
 you need to perform the steps described in this section.
 
-When in doubt, the code in the `test project <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/>`_
-and the `sample app <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/>`_
+When in doubt, the code in the `test project <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/>`_
+and the `sample app <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/>`_
 will serve you as source of truth:
 just replicate and adapt that code to get a basic derivative of
-*openwisp-network-topology* working.
+*immunity-network-topology* working.
 
 **Premise**: if you plan on using a customized version of this module,
 we suggest to start with it since the beginning, because migrating your data
@@ -1074,7 +1074,7 @@ from the default module to your extended version may be time consuming.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The first thing you need to do is to create a new django app which will
-contain your custom version of *openwisp-network-topology*.
+contain your custom version of *immunity-network-topology*.
 
 A django app is nothing more than a
 `python package <https://docs.python.org/3/tutorial/modules.html#packages>`_
@@ -1083,7 +1083,7 @@ A django app is nothing more than a
 
     django-admin startapp sample_network_topology
 
-If you use the integration with openwisp-controller, you may want to extend also the
+If you use the integration with immunity-controller, you may want to extend also the
 integration app if you need::
 
     django-admin startapp sample_integration_device
@@ -1093,29 +1093,29 @@ which is available in your `PYTHON_PATH <https://docs.python.org/3/using/cmdline
 so that you can then import the result into your project.
 
 Now you need to add ``sample_network_topology`` to ``INSTALLED_APPS`` in your ``settings.py``,
-ensuring also that ``openwisp_network_topology`` has been removed:
+ensuring also that ``immunity_network_topology`` has been removed:
 
 .. code-block:: python
 
     INSTALLED_APPS = [
         # ... other apps ...
-        'openwisp_utils.admin_theme',
+        'immunity_utils.admin_theme',
         # all-auth
         'django.contrib.sites',
-        'openwisp_users.accounts',
+        'immunity_users.accounts',
         'allauth',
         'allauth.account',
         'allauth.socialaccount',
-        # (optional) openwisp_controller - required only if you are using the integration app
-        'openwisp_controller.pki',
-        'openwisp_controller.config',
+        # (optional) immunity_controller - required only if you are using the integration app
+        'immunity_controller.pki',
+        'immunity_controller.config',
         'reversion',
         'sortedm2m',
         # network topology
         # 'sample_network_topology' <-- uncomment and replace with your app-name here
         # (optional) required only if you need to extend the integration app
         # 'sample_integration_device' <-- uncomment and replace with your integration-app-name here
-        'openwisp_users',
+        'immunity_users',
         # admin
         'django.contrib.admin',
         # rest framework
@@ -1125,12 +1125,12 @@ ensuring also that ``openwisp_network_topology`` has been removed:
 For more information about how to work with django projects and django apps,
 please refer to the `django documentation <https://docs.djangoproject.com/en/dev/intro/tutorial01/>`_.
 
-2. Install ``openwisp-network-topology``
+2. Install ``immunity-network-topology``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Install (and add to the requirement of your project) openwisp-network-topology::
+Install (and add to the requirement of your project) immunity-network-topology::
 
-    pip install openwisp-network-topology
+    pip install immunity-network-topology
 
 3. Add ``EXTENDED_APPS``
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1139,13 +1139,13 @@ Add the following to your ``settings.py``:
 
 .. code-block:: python
 
-    EXTENDED_APPS = ('openwisp_network_topology',)
+    EXTENDED_APPS = ('immunity_network_topology',)
 
 
-4. Add ``openwisp_utils.staticfiles.DependencyFinder``
+4. Add ``immunity_utils.staticfiles.DependencyFinder``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ``openwisp_utils.staticfiles.DependencyFinder`` to
+Add ``immunity_utils.staticfiles.DependencyFinder`` to
 ``STATICFILES_FINDERS`` in your ``settings.py``:
 
 .. code-block:: python
@@ -1153,13 +1153,13 @@ Add ``openwisp_utils.staticfiles.DependencyFinder`` to
     STATICFILES_FINDERS = [
         'django.contrib.staticfiles.finders.FileSystemFinder',
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-        'openwisp_utils.staticfiles.DependencyFinder',
+        'immunity_utils.staticfiles.DependencyFinder',
     ]
 
-5. Add ``openwisp_utils.loaders.DependencyLoader``
+5. Add ``immunity_utils.loaders.DependencyLoader``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ``openwisp_utils.loaders.DependencyLoader`` to ``TEMPLATES`` in your ``settings.py``:
+Add ``immunity_utils.loaders.DependencyLoader`` to ``TEMPLATES`` in your ``settings.py``:
 
 .. code-block:: python
 
@@ -1170,7 +1170,7 @@ Add ``openwisp_utils.loaders.DependencyLoader`` to ``TEMPLATES`` in your ``setti
                 'loaders': [
                     'django.template.loaders.filesystem.Loader',
                     'django.template.loaders.app_directories.Loader',
-                    'openwisp_utils.loaders.DependencyLoader',
+                    'immunity_utils.loaders.DependencyLoader',
                 ],
                 'context_processors': [
                     'django.template.context_processors.debug',
@@ -1188,13 +1188,13 @@ Add ``openwisp_utils.loaders.DependencyLoader`` to ``TEMPLATES`` in your ``setti
 
 Please refer to the following files in the sample app of the test project:
 
-- `sample_network_topology/__init__.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/__init__.py>`_.
-- `sample_network_topology/apps.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/apps.py>`_.
+- `sample_network_topology/__init__.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/__init__.py>`_.
+- `sample_network_topology/apps.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/apps.py>`_.
 
-For the integration with openwisp-controller, see:
+For the integration with immunity-controller, see:
 
-- `sample_integration_device/__init__.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_integration_device/__init__.py>`_.
-- `sample_integration_device/apps.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_integration_device/apps.py>`_.
+- `sample_integration_device/__init__.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_integration_device/__init__.py>`_.
+- `sample_integration_device/apps.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_integration_device/apps.py>`_.
 
 You have to replicate and adapt that code in your project.
 
@@ -1205,7 +1205,7 @@ the `"Applications" section in the django documentation <https://docs.djangoproj
 7. Create your custom models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Please refer to `sample_app models file <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/models.py>`_
+Please refer to `sample_app models file <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/models.py>`_
 use in the test project.
 
 You have to replicate and adapt that code in your project.
@@ -1226,7 +1226,7 @@ Once you have created the models, add the following to your ``settings.py``:
     TOPOLOGY_NODE_MODEL = 'sample_network_topology.Node'
     TOPOLOGY_SNAPSHOT_MODEL = 'sample_network_topology.Snapshot'
     TOPOLOGY_TOPOLOGY_MODEL = 'sample_network_topology.Topology'
-    # if you use the integration with OpenWISP Controller and/or OpenWISP Monitoring
+    # if you use the integration with Immunity Controller and/or Immunity Monitoring
     TOPOLOGY_DEVICE_DEVICENODE_MODEL = 'sample_integration_device.DeviceNode'
     TOPOLOGY_DEVICE_WIFIMESH_MODEL = 'sample_integration_device.WifiMesh'
 
@@ -1246,7 +1246,7 @@ For more information, refer to the
 10. Create the admin
 ^^^^^^^^^^^^^^^^^^^^
 
-Refer to the `admin.py file of the sample app <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/admin.py>`_.
+Refer to the `admin.py file of the sample app <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/admin.py>`_.
 
 To introduce changes to the admin, you can do it in two main ways which are described below.
 
@@ -1262,7 +1262,7 @@ For example:
 
 .. code-block:: python
 
-    from openwisp_network_topology.admin import TopologyAdmin, LinkAdmin, NodeAdmin
+    from immunity_network_topology.admin import TopologyAdmin, LinkAdmin, NodeAdmin
 
     # TopologyAdmin.list_display.insert(1, 'my_custom_field') <-- your custom change example
     # LinkAdmin.list_display.insert(1, 'my_custom_field') <-- your custom change example
@@ -1279,7 +1279,7 @@ monkey patching, you can proceed as follows:
     from django.contrib import admin
     from swapper import load_model
 
-    from openwisp_network_topology.admin import (
+    from immunity_network_topology.admin import (
         TopologyAdmin as BaseTopologyAdmin,
         LinkAdmin as BaseLinkAdmin,
         NodeAdmin as BaseNodeAdmin
@@ -1317,14 +1317,14 @@ Please read and replicate according to your project needs:
 
     # If you've extended visualizer views (discussed below).
     # Import visualizer views & function to add it.
-    # from openwisp_network_topology.utils import get_visualizer_urls
+    # from immunity_network_topology.utils import get_visualizer_urls
     # from .sample_network_topology.visualizer import views
 
     urlpatterns = [
         # If you've extended visualizer views (discussed below).
         # Add visualizer views in urls.py
         # path('topology/', include(get_visualizer_urls(views))),
-        path('', include('openwisp_network_topology.urls')),
+        path('', include('immunity_network_topology.urls')),
         path('admin/', admin.site.urls),
     ]
 
@@ -1339,10 +1339,10 @@ inside your app, which contains the following:
 
 .. code-block:: python
 
-    from openwisp_network_topology.api import views
+    from immunity_network_topology.api import views
     # When you want to modify views, please change views location
     # from . import views
-    from openwisp_network_topology.utils import get_api_urls
+    from immunity_network_topology.utils import get_api_urls
 
     urlpatterns = get_api_urls(views)
 
@@ -1352,23 +1352,23 @@ inside your app, which contains the following:
 To extend the management commands, create `sample_network_topology/management/commands` directory and
 two files in it:
 
-- `save_snapshot.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/management/commands/save_snapshot.py>`_
-- `update_topology.py <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/management/commands/update_topology.py>`_
+- `save_snapshot.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/management/commands/save_snapshot.py>`_
+- `update_topology.py <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/management/commands/update_topology.py>`_
 
 14. Import the automated tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When developing a custom application based on this module, it's a good
 idea to import and run the base tests too, so that you can be sure the changes
-you're introducing are not breaking some of the existing features of *openwisp-network-topology*.
+you're introducing are not breaking some of the existing features of *immunity-network-topology*.
 
-Refer to the `tests.py file of the sample app <https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/tests.py>`_.
+Refer to the `tests.py file of the sample app <https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/tests.py>`_.
 
 In case you need to add breaking changes, you can overwrite the tests defined
 in the base classes to test your own behavior.
 
 For testing you also need to extend the fixtures, you can copy the
-file ``openwisp_network_topology/fixtures/test_users.json`` in your sample app's
+file ``immunity_network_topology/fixtures/test_users.json`` in your sample app's
 ``fixtures/`` directory.
 
 Now, you can then run tests with::
@@ -1392,7 +1392,7 @@ The following steps are not required and are intended for more advanced customiz
 Extending the views is only required when you want to make changes in the
 behaviour of the API.
 Please refer to `sample_network_topology/api/views.py
-<https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/api/views.py>`_
+<https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/api/views.py>`_
 and replicate it in your application.
 
 If you extend these views, remember to use these views in the
@@ -1404,7 +1404,7 @@ If you extend these views, remember to use these views in the
 Similar to API views, visualizer views are only required to be extended
 when you want to make changes in the Visualizer.
 Please refer to `sample_network_topology/visualizer/views.py
-<https://github.com/openwisp/openwisp-network-topology/tree/master/tests/openwisp2/sample_network_topology/visualizer/views.py>`_
+<https://github.com/edge-servers/immunity-network-topology/tree/master/tests/immunity2/sample_network_topology/visualizer/views.py>`_
 and replicate it in your application.
 
 If you extend these views, remember to use these views in the ``urls.py``.
@@ -1412,17 +1412,17 @@ If you extend these views, remember to use these views in the ``urls.py``.
 Contributing
 ------------
 
-Please refer to the `OpenWISP contributing guidelines <http://openwisp.io/docs/developer/contributing.html>`_.
+Please refer to the `Immunity contributing guidelines <http://immunity.io/docs/developer/contributing.html>`_.
 
 Changelog
 ---------
 
-See `CHANGES <https://github.com/openwisp/openwisp-network-topology/blob/master/CHANGES.rst>`_.
+See `CHANGES <https://github.com/edge-servers/immunity-network-topology/blob/master/CHANGES.rst>`_.
 
 License
 -------
 
-See `LICENSE <https://github.com/openwisp/openwisp-network-topology/blob/master/LICENSE>`_.
+See `LICENSE <https://github.com/edge-servers/immunity-network-topology/blob/master/LICENSE>`_.
 
 This projects bundles third-party javascript libraries in its source code:
 
@@ -1431,4 +1431,4 @@ This projects bundles third-party javascript libraries in its source code:
 Support
 -------
 
-See `OpenWISP Support Channels <http://openwisp.org/support.html>`_.
+See `Immunity Support Channels <http://immunity.org/support.html>`_.

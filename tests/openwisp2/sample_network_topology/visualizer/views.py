@@ -1,7 +1,7 @@
-from openwisp_network_topology.visualizer.views import (
+from immunity_network_topology.visualizer.views import (
     TopologyDetailView as BaseTopologyDetailView,
 )
-from openwisp_network_topology.visualizer.views import (
+from immunity_network_topology.visualizer.views import (
     TopologyListView as BaseTopologyListView,
 )
 
