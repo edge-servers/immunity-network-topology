@@ -17,10 +17,12 @@ def get_settings_value(option, default):
     if outdated_option_used:
         logger.warn(
             f'{outdated_option_used}_{option} setting is deprecated. It will be removed '
-            f'in the future, please use OPENWISP_NETWORK_TOPOLOGY_{option} instead.'
+            f'in the future, please use IMMUNITY
+_NETWORK_TOPOLOGY_{option} instead.'
         )
         return getattr(settings, f'{outdated_option_used}_{option}')
-    return getattr(settings, f'OPENWISP_NETWORK_TOPOLOGY_{option}', default)
+    return getattr(settings, f'IMMUNITY
+_NETWORK_TOPOLOGY_{option}', default)
 
 
 DEFAULT_PARSERS = [

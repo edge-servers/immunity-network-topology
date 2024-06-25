@@ -167,9 +167,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOGIN_REDIRECT_URL = 'admin:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_REDIRECT_URL
 
-OPENWISP_ORGANIZATION_USER_ADMIN = True
-OPENWISP_ORGANIZATION_OWNER_ADMIN = True
-OPENWISP_USERS_AUTH_API = True
+IMMUNITY
+_ORGANIZATION_USER_ADMIN = True
+IMMUNITY
+_ORGANIZATION_OWNER_ADMIN = True
+IMMUNITY
+_USERS_AUTH_API = True
 
 # Note that the following celery settings
 # are intended only for development purposes
@@ -193,7 +196,8 @@ if not TESTING and any(['shell' in sys.argv, 'shell_plus' in sys.argv]):
 
 # Avoid adding unnecessary dependency to speedup tests.
 if not TESTING or (TESTING and os.environ.get('WIFI_MESH', False)):
-    OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION = True
+    IMMUNITY
+_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION = True
     INSTALLED_APPS.insert(
         INSTALLED_APPS.index('immunity_controller.connection'),
         'immunity_controller.geo',
@@ -212,7 +216,8 @@ if not TESTING or (TESTING and os.environ.get('WIFI_MESH', False)):
         'HOST': os.getenv('INFLUXDB_HOST', 'localhost'),
         'PORT': '8086',
     }
-    OPENWISP_MONITORING_MAC_VENDOR_DETECTION = False
+    IMMUNITY
+_MONITORING_MAC_VENDOR_DETECTION = False
     CACHES = {
         'default': {
             'BACKEND': 'django_redis.cache.RedisCache',

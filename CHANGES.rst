@@ -81,7 +81,8 @@ Changes
 
 - **Backward incompatible**: API and visualizer views now require authentication by default.
   This can be changed through the new
-  `OPENWISP_NETWORK_TOPOLOGY_API_AUTH_REQUIRED <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology-api-auth-required>`_
+  `IMMUNITY
+_NETWORK_TOPOLOGY_API_AUTH_REQUIRED <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology-api-auth-required>`_
   setting
 - Upgraded openvpn nodes to netdiff 0.9
 - Automatically manage organization of Node and Link

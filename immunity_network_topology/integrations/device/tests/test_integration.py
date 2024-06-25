@@ -614,7 +614,8 @@ class TestAdmin(Base, TransactionTestCase):
     def test_topology_admin(self):
         """
         Tests WifiMeshInlineAdmin is absent in TopologyAdmin
-        when OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION
+        when IMMUNITY
+_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION
         is set to False.
 
         Note: This test is present here because TopologyAdmin class

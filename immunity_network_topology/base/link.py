@@ -189,7 +189,8 @@ class AbstractLink(ShareableOrgMixin, TimeStampedEditableModel):
         """
         deletes links that have been down for more than
         the amount of days specified in
-        ``OPENWISP_NETWORK_TOPOLOGY_LINK_EXPIRATION``
+        ``IMMUNITY
+_NETWORK_TOPOLOGY_LINK_EXPIRATION``
         """
         LINK_EXPIRATION = app_settings.LINK_EXPIRATION
         if LINK_EXPIRATION not in [False, None]:

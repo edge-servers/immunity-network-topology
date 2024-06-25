@@ -311,13 +311,16 @@ Sending data for topology with RECEIVE strategy
     COMMAND="cat /var/log/openvpn/tun0.stats"
     UUID="<TOPOLOGY-UUID-HERE>"
     KEY="<TOPOLOGY-KEY-HERE>"
-    OPENWISP_URL="https://<OPENWISP_DOMAIN_HERE>"
+    IMMUNITY
+_URL="https://<IMMUNITY
+_DOMAIN_HERE>"
     $COMMAND |
         # Upload the topology data to Immunity
         curl -X POST \
             --data-binary @- \
             --header "Content-Type: text/plain" \
-            $OPENWISP_URL/api/v1/network-topology/topology/$UUID/receive/?key=$KEY
+            $IMMUNITY
+_URL/api/v1/network-topology/topology/$UUID/receive/?key=$KEY
 
 3. Add the ``/opt/send-topology.sh`` script created in the previous step
    to the crontab, here's an example which sends the topology data every 5 minutes:
@@ -387,13 +390,16 @@ the same organization, assuming the `Immunity controller integration
  COMMAND="zerotier-cli peers -j"
  UUID="<TOPOLOGY-UUID-HERE>"
  KEY="<TOPOLOGY-KEY-HERE>"
- OPENWISP_URL="https://<OPENWISP_DOMAIN_HERE>"
+ IMMUNITY
+_URL="https://<IMMUNITY
+_DOMAIN_HERE>"
  $COMMAND |
      # Upload the topology data to Immunity
      curl -X POST \
          --data-binary @- \
          --header "Content-Type: text/plain" \
-         $OPENWISP_URL/api/v1/network-topology/topology/$UUID/receive/?key=$KEY
+         $IMMUNITY
+_URL/api/v1/network-topology/topology/$UUID/receive/?key=$KEY
 
 2. Add the ``/opt/send-zt-topology.sh`` script created in the previous step
    to the root crontab, here's an example which sends the topology data every **5 minutes**:
@@ -557,7 +563,8 @@ This additional and optional module provides the following features:
 - if `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`_
   is installed and enabled, the system can automatically create topology
   for the WiFi Mesh (802.11s) interfaces using the monitoring data provided by the agent.
-  You can enable this by setting `OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION
+  You can enable this by setting `IMMUNITY
+_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION
   <#immunity_network_topology_wifi_mesh_integration>`_ to ``True``.
 
 This integration makes the whole system a lot faster in detecting important events in the network.
@@ -610,7 +617,8 @@ the relationship between devices and nodes.
 Settings
 --------
 
-``OPENWISP_NETWORK_TOPOLOGY_PARSERS``
+``IMMUNITY
+_NETWORK_TOPOLOGY_PARSERS``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+-------------+
@@ -621,7 +629,8 @@ Settings
 
 Additional custom `netdiff parsers <https://github.com/edge-servers/netdiff#parsers>`_.
 
-``OPENWISP_NETWORK_TOPOLOGY_SIGNALS``
+``IMMUNITY
+_NETWORK_TOPOLOGY_SIGNALS``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+-------------+
@@ -634,7 +643,8 @@ String representing python module to import on initialization.
 
 Useful for loading django signals or to define custom behaviour.
 
-``OPENWISP_NETWORK_TOPOLOGY_TIMEOUT``
+``IMMUNITY
+_NETWORK_TOPOLOGY_TIMEOUT``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+-------------+
@@ -645,7 +655,8 @@ Useful for loading django signals or to define custom behaviour.
 
 Timeout when fetching topology URLs.
 
-``OPENWISP_NETWORK_TOPOLOGY_LINK_EXPIRATION``
+``IMMUNITY
+_NETWORK_TOPOLOGY_LINK_EXPIRATION``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+-------------+
@@ -659,7 +670,8 @@ If a link is down for more days than this number, it will be deleted by the
 
 Setting this to ``False`` will disable this feature.
 
-``OPENWISP_NETWORK_TOPOLOGY_NODE_EXPIRATION``
+``IMMUNITY
+_NETWORK_TOPOLOGY_NODE_EXPIRATION``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+--------------------------------+
@@ -670,10 +682,12 @@ Setting this to ``False`` will disable this feature.
 
 If a node has not been modified since the days specified and if it has no links,
 it will be deleted by the ``update_topology`` management command. This depends on
-``OPENWISP_NETWORK_TOPOLOGY_LINK_EXPIRATION`` being enabled.
+``IMMUNITY
+_NETWORK_TOPOLOGY_LINK_EXPIRATION`` being enabled.
 Replace ``False`` with an integer to enable the feature.
 
-``OPENWISP_NETWORK_TOPOLOGY_VISUALIZER_CSS``
+``IMMUNITY
+_NETWORK_TOPOLOGY_VISUALIZER_CSS``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+--------------------------------+
@@ -685,7 +699,8 @@ Replace ``False`` with an integer to enable the feature.
 Path of the visualizer css file. Allows customization of css according to user's
 preferences.
 
-``OPENWISP_NETWORK_TOPOLOGY_API_URLCONF``
+``IMMUNITY
+_NETWORK_TOPOLOGY_API_URLCONF``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+---------------+
@@ -697,7 +712,8 @@ preferences.
 Use the ``urlconf`` option to change receive api url to point to
 another module, example, ``myapp.urls``.
 
-``OPENWISP_NETWORK_TOPOLOGY_API_BASEURL``
+``IMMUNITY
+_NETWORK_TOPOLOGY_API_BASEURL``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+---------------+
@@ -712,7 +728,8 @@ of the url, this will enable you to point all the API urls to
 your immunity-network-topology API server's domain,
 example value: ``https://mytopology.myapp.com``.
 
-``OPENWISP_NETWORK_TOPOLOGY_API_AUTH_REQUIRED``
+``IMMUNITY
+_NETWORK_TOPOLOGY_API_AUTH_REQUIRED``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+---------------+
@@ -725,7 +742,8 @@ When enabled, the API `endpoints <#list-of-endpoints>`_ will only allow authenti
 who have the necessary permissions to access the objects which
 belong to the organizations the user manages.
 
-``OPENWISP_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION``
+``IMMUNITY
+_NETWORK_TOPOLOGY_WIFI_MESH_INTEGRATION``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------+---------------+
